@@ -1,0 +1,31 @@
+Scikit-learn model structure and parameters:
+
+Linear Regression: linear_model.LogisticRegression()
+KNN: neighbors.KNeighborsClassifier()
+SVM: SVC(gamma='auto', class_weight='balanced')
+Random Forest: ensemble.RandomForestClassifier()
+Neural Network: MLPClassifier()
+
+CNN model structure and parameters:
+
+conv1 = nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=2)
+bn1 = nn.BatchNorm2d(32)
+conv2 = nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=2)
+bn2 = nn.BatchNorm2d(64)
+mp = nn.MaxPool2d(2)
+fc1 = nn.Linear(64 * strain_pairs * 26, 128)
+fc2 = nn.Linear(128, 64)
+fc3 = nn.Linear(64, 2)
+dropout = nn.Dropout(p=dropout_setting)
+logsoftmax = nn.LogSoftmax()
+
+
+SE model structure and parameters:
+
+adaptive_avg_pool2d(x, 1)
+fc = nn.Sequential(
+    nn.Conv2d(channels, channels // reduction, 1, bias=False),
+    nn.ReLU(),
+    nn.Conv2d(channels // reduction, channels, 1, bias=False),
+)
+torch.sigmoid(w)
