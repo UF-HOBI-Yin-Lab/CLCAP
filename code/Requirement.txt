@@ -1,0 +1,6 @@
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch(in case your python version doesn't match the cuda, and conda-forge will allocate a cpuonly version to your pytorch)
+
+conda install pandas
+conda install scikit-learn
+conda install pytorch-metric-learning -c metric-learning -c pytorch
+pip3 install --upgrade numpy==1.22 (optional)
