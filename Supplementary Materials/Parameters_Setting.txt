@@ -21,7 +21,9 @@ dropout = nn.Dropout(p=dropout_setting)
 logsoftmax = nn.LogSoftmax()
 
 
-SE model structure and parameters:
+SE Block structure and parameters:
+
+conv1 = nn.Conv2d(1, 64, kernel_size=3, stride=1, padding=1, bias=False)
 
 adaptive_avg_pool2d(x, 1)
 fc = nn.Sequential(
