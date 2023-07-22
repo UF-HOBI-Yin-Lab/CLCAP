@@ -1,14 +1,12 @@
-Scikit-learn model structure and parameters:
 
+S1.1 The parameters for traditional machine learning models in Scikit-learn.
 Linear Regression: linear_model.LogisticRegression(penalty = 'l2', C = 1, class_weight = 'None', solver = 'lbfgs', max_iter = 100)
 KNN: neighbors.KNeighborsClassifier(n_neighbors = 5, weights = 'uniform', algorithm = 'auto', leaf_size = 30, p = 2)
 SVM: SVC(gamma='auto', class_weight='balanced')
 Random Forest: ensemble.RandomForestClassifier(n_estimators = 100, criterion = 'gini', max_depth = None, class_weight = None)
 Neural Network: MLPClassifier(hidden_layer_sizes = 100, activation = 'relu', solver = 'adam', alpha = 0.0001)
 
-
-CNN model structure and parameters:
-
+S1.2 The parameters for the baseline of convolutional neural networks. 
 conv1 = nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=2)
 bn1 = nn.BatchNorm2d(32)
 conv2 = nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=2)
@@ -19,7 +17,6 @@ fc2 = nn.Linear(128, 64)
 fc3 = nn.Linear(64, 2)
 dropout = nn.Dropout(p=dropout_setting)
 logsoftmax = nn.LogSoftmax()
-
 
 SE Block structure and parameters:
 
