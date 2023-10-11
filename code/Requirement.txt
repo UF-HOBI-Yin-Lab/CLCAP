@@ -4,3 +4,5 @@ conda install pandas
 conda install scikit-learn
 conda install pytorch-metric-learning -c metric-learning -c pytorch
 pip3 install --upgrade numpy==1.22 (optional)
+
+
